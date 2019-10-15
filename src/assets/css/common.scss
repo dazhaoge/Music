@@ -1,0 +1,35 @@
+
+
+//弹性盒垂直方向布局
+.c-flexColumn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  >main {
+    flex: 1;
+    overflow-x: hidden;
+  }
+}
+
+//超出文本隐藏
+.textFlow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//超出文本隐藏
+.c-textFlow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+}
+
+.c-twoFlow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
